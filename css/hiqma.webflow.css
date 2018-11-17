@@ -225,6 +225,13 @@ body {
   letter-spacing: 2px;
 }
 
+.hero-email.contact-email {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+}
+
 .scroll-down {
   color: tomato;
   text-align: center;
@@ -282,9 +289,7 @@ body {
   display: block;
   width: 100px;
   height: 8px;
-  margin-right: auto;
   margin-bottom: 30px;
-  margin-left: auto;
   border-radius: 100px;
   background-color: tomato;
 }
@@ -298,21 +303,21 @@ body {
 
 .what-we-do-block-subtitle {
   width: 80%;
-  margin-bottom: 20px;
-  opacity: 0.5;
+  opacity: 1;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .what-we-do-list {
-  color: tomato;
+  padding-left: 20px;
+  opacity: 0.5;
+  color: #262626;
 }
 
 .what-we-do-list-item {
   padding-top: 10px;
   padding-bottom: 10px;
-  opacity: 0.6;
   font-size: 16px;
 }
 
@@ -337,6 +342,8 @@ body {
   display: flex;
   max-width: 1920px;
   min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -697,6 +704,7 @@ body {
   margin-top: 70px;
   border-radius: 40px;
   text-decoration: none;
+  cursor: default;
 }
 
 .work-content-container {
@@ -1010,8 +1018,13 @@ body {
   .hero-email {
     padding-right: 30px;
   }
+  .hero-email.contact-email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .what-we-do-wrapper {
-    width: 60%;
+    width: 80%;
   }
   .what-we-do-container {
     display: -webkit-box;
@@ -1036,6 +1049,11 @@ body {
   .what-we-do-header {
     text-align: center;
   }
+  .what-we-do-separator {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .what-we-do-content-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1057,7 +1075,7 @@ body {
     width: 100%;
   }
   .get-to-know-us-section {
-    min-height: 80vh;
+    min-height: 70vh;
   }
   .get-to-know-us-wrapper {
     width: 70%;
@@ -1066,6 +1084,7 @@ body {
     width: 100%;
   }
   .contact-form-section {
+    min-height: 60vh;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -1094,6 +1113,7 @@ body {
     text-align: center;
   }
   .contact-form-text {
+    margin-bottom: 0px;
     text-align: center;
   }
   .contact-form-left-container {
@@ -1181,6 +1201,9 @@ body {
   }
   .what-we-do-header {
     font-size: 28px;
+  }
+  .what-we-do-list {
+    padding-left: 0px;
   }
   .contact-form-text {
     width: 70%;
@@ -1501,8 +1524,10 @@ body {
     grid-column-end: 3;
     -ms-grid-row: 1;
     grid-row-start: 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: 2;
+    -ms-grid-row-span: 2;
+    grid-row-end: 3;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 }
 
